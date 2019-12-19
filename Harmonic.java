@@ -1,19 +1,18 @@
 /*#******************************************************************************************************************
-        # @purpose :Demonstrate FlipCoin Logic.
-        # @file  :FlipCoin.java
+        # @purpose :Demonstrate Harmonic Logic.
+        # @file  :Harmonic.java
         # @author :Sandhya
    #*****************************************************************************************************************/
 package com.BridgeLabz.coreBasics;
 
-public class FlipCoin {
+public class Harmonic {
     public static void main(String[] args) {
-        if(Math.random() < 0.5) {
-            System.out.println("heads");
 
-        }else {
-            System.out.println("tails");
-
+        float harmonic = 1 ;
+        for(int i=2;i<8;i++) {
+            harmonic += (float)1/i;
         }
-        System.out.println(Math.random() *100);
+        System.out.println(harmonic);
     }
+
 }
